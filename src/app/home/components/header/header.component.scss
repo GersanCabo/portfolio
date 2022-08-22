@@ -8,8 +8,11 @@
   color: $white-prs;
   .container {
     z-index: 1;
+    .div-title-prs {
+      h1 {}
+    }
     .btn-sections-prs {
-      .col {
+      .col-btn-sections-prs {
         .section-btn-prs {
           span:nth-of-type(1) {
             border: 2px solid $white-prs;
@@ -39,6 +42,18 @@
         }
       }
     }
+  }
+}
+
+.div-arrow-down-icon-prs {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  font-size: 50px;
+  color: $white-prs;
+  animation: arrow-down-animation 1s linear infinite;
+  em {
+    cursor: pointer;
   }
 }
 
@@ -138,8 +153,6 @@
     animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
 
     0%{
@@ -153,5 +166,21 @@
         opacity: 0;
         border-radius: 50%;
     }
+
+}
+
+@keyframes arrow-down-animation {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 
 }
