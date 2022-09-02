@@ -4,7 +4,7 @@
   background: $black-prs;
   background: -webkit-linear-gradient(to left, lighten($black-prs, 50%), $black-prs);
   width: 100%;
-  height:100vh;
+  height:100%;
   color: $white-prs;
   .container {
     z-index: 1;
@@ -151,6 +151,20 @@
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
+}
+
+@media (max-height: 600px) and (max-width: 991.98px) {
+  .area {
+    height: 600px;
+  }
+
+  .div-arrow-down-icon-prs {
+    display: none;
+  }
+
+  .circles{
+    height: 600px;
+  }
 }
 
 @keyframes animate {
