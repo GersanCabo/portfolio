@@ -1,5 +1,28 @@
 @import '/src/assets/scss/variables.scss';
+.container-fluid {
+  position: relative;
+  background-color: $white-prs;
+}
 
 .area {
-  height: 100vh;
+  min-height: 800px;
+  .prs-col-img {
+    img {
+      width: 80%;
+      max-width: 300px;
+      border-radius: 100%;
+    }
+  }
+  .icons-tech  {
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.prs-bg-technology {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

@@ -1,0 +1,14 @@
+@import '/src/assets/scss/variables.scss';
+
+.container-fluid {
+  background-color: $black-prs;
+  a {
+    color: $white-prs;
+    text-decoration: none;
+  }
+  button {
+    color: $white-prs;
+    background-color: transparent;
+    border: none;
+  }
+}

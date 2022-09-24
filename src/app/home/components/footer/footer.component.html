@@ -1,15 +1,31 @@
 <div class="container-fluid">
   <div class="grid">
     <div class="row text-center py-2">
-      <div class="col">
-        <a href="#">Credits</a>
+      <div class="col col-6 col-lg-4">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Credits
+        </button>
       </div>
-      <div class="col">
-        <a href="#">&copy; Gersán Cabo (@GersánCabo) 2022</a>
+      <div class="col order-1 order-lg-0 mt-3 mt-lg">
+        <a href="https://github.com/GersanCabo">&copy; Gersán Cabo (@GersánCabo) 2022</a>
       </div>
-      <div class="col">
+      <div class="col col-6 col-lg-4">
         <a href="#">Go to top</a>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Credits</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>In order of appearance:</h6>
+      </div>
+    </div>
+  </div>
