@@ -19,11 +19,15 @@
       display: flex;
       justify-content: center;
       .link-hover-icon {
-        height: 100px;
+        height: 100%;
         width: 100px;
+        color: gray;
+        text-decoration: none;
+        h5 {
+          margin-top: 5px;
+        }
         img {
-          width: 100px;
-
+          width: 80px;
         }
       }
     }
