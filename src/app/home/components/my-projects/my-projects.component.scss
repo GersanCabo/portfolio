@@ -6,15 +6,28 @@
   .projects-row {
     .card {
       .card-img-overlay {
-        background-color: transparent;
-        color: transparent;
-        transition: background 0.3s ease-out 100ms, color 0.3s ease-out 100ms;
-      }
-    }
-    .card:hover {
-      .card-img-overlay {
         background-color: rgba(0, 0, 0, 0.24);
         color: $white-prs;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .area{
+    .projects-row {
+      .card {
+        .card-img-overlay {
+          background-color: transparent;
+          color: transparent;
+          transition: background 0.3s ease-out 100ms, color 0.3s ease-out 100ms;
+        }
+      }
+      .card:hover {
+        .card-img-overlay {
+          background-color: rgba(0, 0, 0, 0.24);
+          color: $white-prs;
+        }
       }
     }
   }

@@ -1,0 +1,24 @@
+@import '/src/assets/scss/variables.scss';
+
+.area {
+  background-color: $white-prs;
+  .contact-link {
+    width: 200px;
+    em {
+      font-size: 50px;
+      margin-right: 5px;
+    }
+  }
+  a {
+    color: $black-prs;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .area {
+    em {
+      font-size: 40px;
+    }
+  }
+}

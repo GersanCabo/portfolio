@@ -1,10 +1,7 @@
 @import '/src/assets/scss/variables.scss';
-.container-fluid {
-  position: relative;
-  background-color: $white-prs;
-}
 
 .area {
+  background-color: $white-prs;
   min-height: 800px;
   .prs-col-img {
     img {
