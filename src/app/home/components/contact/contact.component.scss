@@ -17,8 +17,17 @@
 
 @media (min-width: 576px) {
   .area {
-    em {
-      font-size: 40px;
+    .contact-link {
+      border-radius: 10px;
+      padding: 20px 0px;
+      transition: background 0.3s ease-out 100ms, color 0.3s ease-out 100ms;
+      em {
+        font-size: 40px;
+      }
+      &:hover {
+        background-color: $black-prs;
+        color: $white-prs;
+      }
     }
   }
 }
