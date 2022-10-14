@@ -1,8 +1,8 @@
 @import '/src/assets/scss/variables.scss';
 
 .area{
-  background: $black-prs;
-  background: -webkit-linear-gradient(to left, lighten($black-prs, 50%), $black-prs);
+  background: $bg-header;
+  background: -webkit-linear-gradient(to left, lighten($bg-header, 50%), $bg-header);
   width: 100%;
   height:100%;
   color: $white-prs;
@@ -50,10 +50,12 @@
   position: absolute;
   bottom: 0;
   font-size: 50px;
-  color: $white-prs;
   animation: arrow-down-animation 1s linear infinite;
-  em {
-    cursor: pointer;
+  a{
+    color: $white-prs;
+    em {
+      cursor: pointer;
+    }
   }
 }
 
@@ -72,7 +74,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(230, 0, 255, 0.2);
+  background: $purple-prs;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }

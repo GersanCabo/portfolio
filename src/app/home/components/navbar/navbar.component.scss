@@ -1,0 +1,13 @@
+nav {
+  transition: opacity 0.3s ease-out 100ms, z-index 0s ease 500ms;
+}
+
+.hidden {
+  opacity: 0%;
+  z-index: -5;
+}
+
+.visible {
+  opacity: 100%;
+  z-index: 10;
+}

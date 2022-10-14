@@ -3,6 +3,9 @@
 .area {
   background-color: $white-prs;
   min-height: 800px;
+  .accordion-item {
+    margin: 10px 0px;
+  }
   .prs-col-img {
     img {
       width: 80%;

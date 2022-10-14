@@ -6,6 +6,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MyProjectsComponent } from './components/my-projects/my-projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
     FooterComponent,
     MyProjectsComponent,
     ContactComponent,
+    NavbarComponent,
   ],
   imports: [
     CommonModule
