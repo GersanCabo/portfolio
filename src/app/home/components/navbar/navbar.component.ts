@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
    */
   pageScrollDetected() {
     window.addEventListener("scroll", () => {
-      let pixelsScrolled = window.pageYOffset;
+      let pixelsScrolled = window.scrollY;
       if (pixelsScrolled && pixelsScrolled > this.lastScrollTop) {
         this.visible = false;
         console.log(this.visible);

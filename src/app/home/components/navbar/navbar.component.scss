@@ -1,13 +1,25 @@
-nav {
-  transition: opacity 0.3s ease-out 100ms, z-index 0s ease 500ms;
+.navbar {
+  height: 60px;
 }
 
 .hidden {
-  opacity: 0%;
-  z-index: -5;
+  top: -60px;
+  animation-name: hidden-animation;
+  animation-duration: 1s;
 }
 
 .visible {
-  opacity: 100%;
-  z-index: 10;
+  top: 0%;
+  animation-name: visible-animation;
+  animation-duration: 1s;
+}
+
+@keyframes hidden-animation {
+  0%   {top: 0%;}
+  100% {top: -60px;}
+}
+
+@keyframes visible-animation {
+  0%   {top: -60px;}
+  100% {top: 0%;}
 }
