@@ -1,9 +1,36 @@
+@import '/src/assets/scss/variables.scss';
+
+#navbarTop {
+  z-index: -4;
+}
+
 .navbar {
   height: 60px;
+  background: $black-prs;
+  > div {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .nav-link {
+    color: $white-prs;
+  }
+  .prs-ul-nav .nav-item{
+    width: 80px;
+    text-align: center;
+    border: 1px transparentize($white-prs, 0.7) solid;
+    border-radius: 10px;
+    margin: 0px 5px;
+    &:hover {
+      background-color: transparentize($white-prs, 0.2);
+      em {
+        color: #212529;
+      }
+    }
+  }
 }
 
 .hidden {
-  top: -60px;
+  top: -66px;
   animation-name: hidden-animation;
   animation-duration: 1s;
 }
@@ -16,10 +43,10 @@
 
 @keyframes hidden-animation {
   0%   {top: 0%;}
-  100% {top: -60px;}
+  100% {top: -66px;}
 }
 
 @keyframes visible-animation {
-  0%   {top: -60px;}
+  0%   {top: -66px;}
   100% {top: 0%;}
 }

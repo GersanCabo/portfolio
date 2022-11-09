@@ -8,9 +8,6 @@
   color: $white-prs;
   .container {
     z-index: 1;
-    .div-title-prs {
-      h1 {}
-    }
     .btn-sections-prs {
       .col-btn-sections-prs {
         .section-btn-prs {
@@ -25,20 +22,7 @@
               background-color: $white-prs;
               color: $black-prs;
             }
-            /*
-            &:hover{
-              + .arrow-prs {
-                color: $white-prs;
-              }
-            }
-            */
           }
-          /*
-          .arrow-prs {
-            color: #00000000;
-            transition: color 0.3s ease-out 100ms;
-          }
-          */
         }
       }
     }

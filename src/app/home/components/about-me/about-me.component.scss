@@ -14,7 +14,6 @@
     }
   }
   .icons-tech  {
-    //position: relative;
     .div-img-icon {
       display: flex;
       justify-content: center;
@@ -31,24 +30,6 @@
         }
       }
     }
-    /*
-    .div-shadow-absolute {
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      .prs-shadow {
-        position: absolute;
-        height: 100%;
-        width: 100px;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.150);
-        margin: auto;
-      }
-    }
-    */
   }
 }
 

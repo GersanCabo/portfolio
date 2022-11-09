@@ -9,6 +9,7 @@ export class NavbarComponent implements OnInit {
 
   visible: boolean = false;
   lastScrollTop: number = 0;
+  firstTime: boolean = true;
 
   constructor() {
 
@@ -25,12 +26,17 @@ export class NavbarComponent implements OnInit {
   pageScrollDetected() {
     window.addEventListener("scroll", () => {
       let pixelsScrolled = window.scrollY;
-      if (pixelsScrolled && pixelsScrolled > this.lastScrollTop) {
-        this.visible = false;
-        console.log(this.visible);
-      } else {
+      if (this.firstTime) {
+        this.firstTime = false
+        let navbar = document.getElementById("navbarTop");
+        if (navbar) {
+          navbar.style.zIndex = "3"
+        }
+      }
+      if (pixelsScrolled && pixelsScrolled < this.lastScrollTop) {
         this.visible = true;
-        console.log(this.visible);
+      } else {
+        this.visible = false;
       }
       this.lastScrollTop = pixelsScrolled <= 0 ? 0 : pixelsScrolled;
     })
